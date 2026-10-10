@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styleHtml.css">
+    <link rel="stylesheet" href="extra.css">
+    <link rel="icon" type="image/png" href="hmtl.png">
+</head>
+<body>
+    <div class="police">0</div>
+    <div class="light"> 0</div>
+    <div class="top"></div>
+<header>
+    <div class="center"><h1>&lt;HTML&gt;<span> Website</span></h1></div>
+    <div id="comment"><span onclick="closeComm()">&times;</span>
+        <p>أضغط على الوسم المراد ليظهر التفاصيل الخاصة به</p></div>
+    <hr size="5px" color="#888">
+</header>
+
+<h2>&lt;Head Elements&gt;</h2>
+<main>
+    <div class="divOne" id="head-one"></div>
+    <div class="divTwo" id="head-two"></div>
+</main>
+
+<h2>&lt;Body Elements&gt;</h2>
+<main>
+    <div class="divOne" id="body-one"></div>
+    <div class="divTwo" id="body-two"></div>
+</main>
+
+<h2>&lt;Global Attributes&gt;</h2>
+<main>
+    <div class="divOne" id="global-one"></div>
+    <div class="divTwo" id="global-two"></div>
+</main>
+
+<script src="tags.js"></script>
+<script src="tags2.js"></script>
+<script>
+    function closeComm() {
+        document.getElementById("comment").style.display="none";
+    }
+</script>
+</body>
+</html>

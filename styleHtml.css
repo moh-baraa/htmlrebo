@@ -1,0 +1,237 @@
+body{
+    background-color: #111;
+    /*background-image: url("banner.jpg") ;*/
+    position: relative;
+    font-family: monospace;
+}
+
+
+.police, .light{
+    position: absolute;
+    filter:blur(10px);
+    color: #0000;
+    top:0;
+    z-index: 1;
+    font-size: 50px;
+}
+.police{
+    right:10%;
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+    animation: rightLight 0.5s infinite alternate;
+}
+.light{
+    right: 5%;
+    text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+    animation: leftLight 0.5s infinite alternate;
+}
+
+@keyframes rightLight {
+    0% {
+        text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+    }
+    100% {
+        text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue, 0 0 80px blue, 0 0 90px blue;
+    }
+}
+@keyframes leftLight {
+    0% {
+        text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+    }
+    100% {
+        text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red, 0 0 90px red;
+    }
+}
+
+.top{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+    }
+
+
+.center{
+    width: 60%;
+    margin: auto;
+}
+
+header h1{
+    text-align: center;
+    color:#bbb;
+    font-size: 12vw;
+    margin: 0;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header h1 span{
+    font-size: 8vw;
+    letter-spacing:2vw;
+}
+header #comment span{
+    color: #444;
+    font-size:18px;
+    font-weight: bold;
+    float: right;
+    margin-right: 2%;
+} 
+header #comment span:hover{
+    cursor: pointer;
+}
+header #comment{
+    width:25%;
+    font-size: 11px;
+    background-color: #8d6f6f;
+    border: 1px solid #9a1313;
+    border-radius: 30px;
+    margin: auto;
+}
+
+p{
+    text-align: center;
+    color:#1b1a19;
+}
+
+h2{
+    text-align: center;
+    color: #bbb;
+    font-size: 3vw;
+}
+
+main{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    z-index: 1;
+}
+
+.divOne, .divTwo{
+    display: inline-block;
+    width: 43%;
+    margin-top: 0;
+}
+
+main details{
+    margin-bottom: 6%;
+}
+
+main details summary{
+    overflow: hidden;
+    list-style: none;
+    padding: 2% 5%;
+    box-shadow: 5px 5px 10px #000;
+    background-color: #222;
+    padding: auto;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 11px;
+}
+
+details[open] summary {
+    box-shadow:none;
+    border-bottom:2px solid #eee ;
+    /*animation: up 0s both;*/
+}
+@keyframes up {
+    100% {
+        text-shadow: 0 0 5px #777, 0 0 10px #777;
+    }
+}
+
+main details summary code{
+    color:#eee;
+    font-size: larger;
+}
+
+details[open] summary code {
+    color:#777;
+}
+
+main details pre {
+    overflow-y: auto;
+    color:#eee;
+    background-color: black;
+    padding: 10px;
+    border:1px solid #eee;
+    /*border-top: 0;
+    check here*/
+    
+    max-width: 100%;
+    /*white-space: pre-wrap;*/
+} 
+
+main .divOne details pre{
+    border-radius:0 15px 15px 15px;
+}
+
+main .divTwo details pre{
+    border-radius:15px 0 15px 15px;
+}
+
+main details p{
+    font-family: Calibri;
+    text-align: right;
+    color: #eee;
+    text-indent: 5%;
+    }
+
+main details footer p{
+    font-size: 10px;
+    color: #555;
+    text-align: center;
+}
+
+/*start coloring & editing code*/
+.elementA{
+    color: #666;
+    font-weight: bold;
+}
+.elementB{
+    color:#2266cb;
+}
+
+.orange{
+    color: #d7ab50;
+    font-size:smaller;
+}
+.blue{
+    color:lightseagreen;
+}
+.modify{
+    font-size: smaller;
+}
+
+
+#closeAllButton{
+    position: fixed;
+    right:3%;
+    bottom: 12%;
+    background-color: transparent;
+    color: #eee;
+    font-size: 18px;
+    border:1px solid #eee;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.red{
+    color: red;
+}
+details pre{
+    word-break: break-all;
+    
+}
+
+/*    <!--############################################################################################################-->
+    <details>
+        <summary><code>&lt;title&gt; &lt;/title&gt;</code></summary>
+            <pre><code>
+
+            </code></pre>
+            <p dir="rtl"></p>
+            <footer>
+            <p>للمزيد من التفاصيل يرجى زيارة الرابط <a href="">الذهاب</a></p> 
+        </footer>
+    </details>
+*/

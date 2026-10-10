@@ -1,0 +1,11 @@
+.attrs{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+.attrs th,.attrs td{border:1px solid #8886;padding:6px 8px;vertical-align:top;text-align:right}
+.attrs th{background:#8882}
+.attrs ul{margin:0;padding:0 16px;list-style:square}
+.attrs code{direction:ltr;unicode-bidi:embed}
+.attrs-wrap{overflow-x:auto}
+.attrs-title{margin:10px 0 0;font-weight:bold}
+/* نصوص فاتحة للشرح */
+details p,.attrs th,.attrs td,.attrs-title,.noattr{color:#eaeaea}
+.attrs td li,.attrs td b{color:#eaeaea}
+.attrs code{color:#ffd479}
