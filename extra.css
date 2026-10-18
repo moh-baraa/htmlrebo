@@ -9,3 +9,11 @@
 details p,.attrs th,.attrs td,.attrs-title,.noattr{color:#eaeaea}
 .attrs td li,.attrs td b{color:#eaeaea}
 .attrs code{color:#ffd479}
+/* تمييز الخصائص العامة (لون مختلف عن الخصائص الخاصة) */
+#global-one .attrs,#global-two .attrs{border-color:#4dd0e1aa}
+#global-one .attrs th,#global-two .attrs th{background:#4dd0e133;color:#80deea}
+#global-one .attrs code,#global-two .attrs code{color:#80deea}
+#global-one summary,#global-two summary{border-inline-start:4px solid #4dd0e1}
+.attrs th{background:#ffd47922}
+#q{display:block;width:min(500px,90%);margin:12px auto;padding:10px 14px;font-size:16px;border-radius:8px;border:1px solid #888;background:#1e1e1e;color:#eee;text-align:center}
+#q-count{text-align:center;color:#ccc;font-size:14px}
